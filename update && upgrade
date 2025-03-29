@@ -1,0 +1,11 @@
+#!/bin/bash
+
+figlet -f digital -c "BREAKING NEWS REPORT" | lolcat
+
+text="go go gadget upgrade"
+
+rate=120
+
+espeak -v en "$text" -s $rate
+
+sudo apt update && sudo apt upgrade
